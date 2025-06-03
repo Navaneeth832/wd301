@@ -1,0 +1,42 @@
+# Node modules
+/node_modules/
+
+# Build output
+/dist/
+/build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: npm package lock files (usually you keep package-lock.json)
+/package-lock.json
+/yarn.lock
+
+# Optional: MacOS folder attributes
+.AppleDouble
+.LSOverride
+
+# Optional: Tailwind CLI cache or PostCSS cache if any
+.cache/
+
+# Optional: VSCode settings sync cache (if applicable)
+.sync/
