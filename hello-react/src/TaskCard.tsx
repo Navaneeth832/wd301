@@ -1,20 +1,14 @@
-import React from "react";
-import './TaskCard.css';
+import React from 'react';
 
-interface TaskCardProps {
-  title: string;
-  duedate: string;
-  aname: string;
-}
-
-const TaskCard: React.FC<TaskCardProps> = ({ title, duedate, aname }) => {
+function TaskCard({ title, assigneeName, dueDate, completedAtDate }) {
   return (
-    <div className="bg-white rounded-lg p-4 shadow border">
-      <h2 className="text-lg font-semibold mb-2">{title}</h2>
-      <p className="text-sm">Completed on: {duedate}</p>
-      <p className="text-sm">Assignee: {aname}</p>
+    <div className="task-card">
+      <h3>{title}</h3>
+      {assigneeName && <p>Assignee: {assigneeName}</p>}
+      {dueDate && <p>Due on: {dueDate}</p>}
+      {completedAtDate && <p>Completed on: {completedAtDate}</p>}
     </div>
   );
-};
+}
 
 export default TaskCard;
